@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include <cs50.h>
+
+//prototype
+int mult_two_ints(int a, int b);
+int main(void)
+
+
+{
+     //ask user for input
+     int x = get_int("Give me an integer: ");
+     
+     int y = get_int("Give me another integer: ");
+     
+    //multiply
+     int z = mult_two_ints(x, y);
+     printf("sum of multiply: %i\n", z);
+     
+}
+
+int mult_two_ints(int a, int b)
+{
+    int mult;
+    mult = a * b;
+    return mult;
+}
